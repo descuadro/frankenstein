@@ -65,10 +65,10 @@ Move it to myapp/app/includes/_MODULE.*
 	module="name_of_the_module"
 	app_path="path_to_app"
 	priotity="set priority to decide what comes first and last"
-	cp $module_css.scss $app_path/scss/modules/
-	cp $module.* $app_path/app/includes/
-	echo "@import 'modules/$module_css.scss'" >> $app_path/scss/style.scss 
+	cp $module_css.scss $app_path/scss/modules/ && ( echo Success moving .scss ; ) || ( echo Failed moving .scss; )
+	cp $module.* $app_path/app/includes/ && ( echo Success moving include file ; ) || ( echo Failed moving include file; )
+	echo "@import 'modules/$module_css.scss'" >> $app_path/scss/style.scss && ( echo Success writing style.scss ; ) || ( echo Failed writing .scss; )
 	##needs test
-	#sed -i '$priotityi\include 'app/includes/_MODULE.*';' index.php
+	#sed -i '$priotityi\include 'app/includes/_MODULE.*';' index.php && ( echo Success writing index file ; ) || ( echo Failed writing index file; )
 
 
