@@ -107,19 +107,24 @@ Move it to myapp/app/includes/modules/_MODULE.php
 
 # Standard app structure
 
-## index.php
-	include 'app/includes/head.php';
-	include 'app/includes/body.php';
-	include 'app/includes/footer.php';
+## myapp/app/index.php
+	include 'includes/head.php';
+	include 'includes/body.php';
+	include 'includes/footer.php';
 
-### head.php
+### myapp/app/includes/head.php
 
 	<link href="css/style.css" rel="stylesheet">
 
-### body.php
+### myapp/app/includes/body.php
 
 Originally empty. To be filled with modules in the order of their priorities.
 
-### footer.php
+Example:
+
+	include 'includes/modules/_MODULE.php';
+
+
+### myapp/app/includes/footer.php
 
 Originally empty. To be filled with modules's .js .
