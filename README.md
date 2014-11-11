@@ -21,6 +21,8 @@ Add the following:
 
 	@import 'modules/_MODULE_css.scss'
 
+*module_install.sh* does it.
+
 ## myapp/app/includes/_MODULE.*
 
 Here goes the .php, .html, .py or whatever needed to execute the module.
@@ -45,15 +47,20 @@ Add the following:
 
 Move it to myapp/scss/modules/_MODULE_css.scss
 
+*module_install.sh* does it.
+
 ### ./_MODULE.*
 
 Move it to myapp/app/includes/_MODULE.*
+
+*module_install.sh* does it.
 
 ### ./install_module.sh
 
 	 #!/bin/bash
 	module="name_of_the_module"
 	app_path="path_to_app"
-	cp $module_css.scss $app_path/scss/modules/ && cp $module.* $app_path/app/includes/ 
+	priotity="set priority to decide what comes first and last"
+	cp $module_css.scss $app_path/scss/modules/ && cp $module.* $app_path/app/includes/ && echo "@import 'modules/$module_css.scss'" >> $app_path/scss/style.scss && sed -i '$priotityi\include 'app/includes/_MODULE.*';' index.php
 
 
