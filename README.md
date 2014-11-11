@@ -1,7 +1,7 @@
 frankenstein
 ============
 
-This is a first
+This is a first scratch of a *module protocol* for Frankenstein.
 
 # Element dynamics
 
