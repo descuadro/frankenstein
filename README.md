@@ -15,7 +15,7 @@ Details go here.
 
 The specific css of each module should be put here.
 
-*module_install.sh* does it.
+*install_module.sh* does it.
 
 ## myaapp/scripts/_MODULE.js
 
@@ -41,7 +41,7 @@ Add the following:
 
 	include 'app/includes/_MODULE.php';
 
-*module_install.sh* SHOULD do it.
+*install_module.sh* SHOULD do it.
 
 Let's start by using *.php* as a standard format to avoid future problems and have simply flexibility for the moment.
 
@@ -51,7 +51,7 @@ Add the following:
 
 	{% include _MODULE.php %}
 
-*module_install.sh* SHOULD do it.
+*install_module.sh* SHOULD do it.
 
 ## myapp/app/includes/footer.php (.php version)
 
@@ -59,7 +59,7 @@ Add the following:
 
 	<script src="scripts/$_MODULE.js" type="text/javascript"></script>"
 
-*module_install.sh* SHOULD do it.
+*install_module.sh* SHOULD do it.
 
 # Standard element structure
 
@@ -69,19 +69,19 @@ Add the following:
 
 Move it to myapp/scss/modules/_MODULE_css.scss
 
-*module_install.sh* does it.
+*install_module.sh* does it.
 
 ### ./_MODULE.js
 
 Move it to myapp/app/scripts/_MODULE.js
 
-*module_install.sh* does it.
+*install_module.sh* does it.
 
 ### ./_MODULE.php
 
 Move it to myapp/app/includes/modules/_MODULE.php
 
-*module_install.sh* does it.
+*install_module.sh* does it.
 
 ### ./install_module.sh
 
