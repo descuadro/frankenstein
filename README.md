@@ -29,7 +29,7 @@ Add the following:
 
 Add the following:
 
-	{% include footer.html %}
+	{% include _MODULE.* %}
 
 # Element structure
 
