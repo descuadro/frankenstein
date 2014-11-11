@@ -86,9 +86,13 @@ Move it to myapp/app/includes/modules/_MODULE.php
 ### ./install_module.sh
 
 	 #!/bin/bash
-	module="name_of_the_module"
-	app_path="path_to_app"
-	priotity="set priority to decide what comes first and last"
+	echo "Module name in the app: "
+	read module
+	echo "You entered: $input_variable"
+	echo "App path:"
+	read app_path
+	echo "Module priority in the webpage: "
+	read priority
 	cp $_MODULE.scss $app_path/scss/modules/$module.scss && ( echo Success moving .scss ; ) || ( echo Failed moving .scss; )
 	cp $_MODULE.js $app_path/scripts/$module.js && ( echo Success moving .js ; ) || ( echo Failed moving .js; )
 	cp $_MODULE.php $app_path/app/includes/modules/$module.php && ( echo Success moving include file ; ) || ( echo Failed moving include file; )
