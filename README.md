@@ -15,7 +15,7 @@ This is a first scratch of a *module protocol* for Frankenstein.
 
 # Element dynamics
 
-## myapp/scss/modules/_MODULE.scss
+## myapp/scss/modules/_MODULE_css.scss
 
 The specific css of each module should be put here.
 
@@ -23,7 +23,7 @@ The specific css of each module should be put here.
 
 Add the following:
 
-	@import 'modules/_MODULE.scss'
+	@import 'modules/_MODULE_css.scss'
 
 ## myapp/app/includes/_MODULE.*
 
@@ -52,3 +52,12 @@ Move it to myapp/scss/modules/_MODULE.scss
 ### ./_MODULE.*
 
 Move it to myapp/app/includes/_MODULE.*
+
+### ./install_module.sh
+
+	 #!/bin/bash
+	module="name_of_the_module"
+	app_path="path_to_app"
+	cp $module_css.scss $app_path/scss/modules/ && cp $module.* $app_path/app/includes/ 
+
+
