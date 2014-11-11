@@ -39,9 +39,11 @@ Add the following:
 
 Add the following:
 
-	include 'app/includes/_MODULE.*';
+	include 'app/includes/_MODULE.php';
 
 *module_install.sh* SHOULD do it.
+
+Let's start by using *.php* as a standar format to avoid future problems and have simply flexibility for the moment.
 
 ## app/index.* (jekyll version)
 
