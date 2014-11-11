@@ -67,19 +67,19 @@ Add the following:
 
 ### ./_MODULE.scss
 
-Move it to myapp/scss/modules/_MODULE_css.scss
+Copy it to myapp/scss/modules/_MODULE_css.scss
 
 *install_module.sh* does it.
 
 ### ./_MODULE.js
 
-Move it to myapp/app/scripts/_MODULE.js
+Copy it to myapp/app/scripts/_MODULE.js
 
 *install_module.sh* does it.
 
 ### ./_MODULE.php
 
-Move it to myapp/app/includes/modules/_MODULE.php
+Copy it to myapp/app/includes/modules/_MODULE.php
 
 *install_module.sh* does it.
 
