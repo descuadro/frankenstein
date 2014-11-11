@@ -33,11 +33,15 @@ Add the following:
 
 	include 'app/includes/_MODULE.*';
 
+*module_install.sh* SHOULD do it.
+
 ## app/index.* (jekyll version)
 
 Add the following:
 
 	{% include _MODULE.* %}
+
+*module_install.sh* SHOULD do it.
 
 # Element structure
 
@@ -61,6 +65,10 @@ Move it to myapp/app/includes/_MODULE.*
 	module="name_of_the_module"
 	app_path="path_to_app"
 	priotity="set priority to decide what comes first and last"
-	cp $module_css.scss $app_path/scss/modules/ && cp $module.* $app_path/app/includes/ && echo "@import 'modules/$module_css.scss'" >> $app_path/scss/style.scss && sed -i '$priotityi\include 'app/includes/_MODULE.*';' index.php
+	cp $module_css.scss $app_path/scss/modules/
+	cp $module.* $app_path/app/includes/
+	echo "@import 'modules/$module_css.scss'" >> $app_path/scss/style.scss 
+	##needs test
+	#sed -i '$priotityi\include 'app/includes/_MODULE.*';' index.php
 
 
