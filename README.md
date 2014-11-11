@@ -43,7 +43,7 @@ Add the following:
 
 *module_install.sh* SHOULD do it.
 
-Let's start by using *.php* as a standar format to avoid future problems and have simply flexibility for the moment.
+Let's start by using *.php* as a standard format to avoid future problems and have simply flexibility for the moment.
 
 ## app/index.* (jekyll version)
 
