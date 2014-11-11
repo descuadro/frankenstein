@@ -33,7 +33,7 @@ Let's use .php as a standard for now.
 
 Add the following:
 
-	@import 'modules/_MODULE_css.scss'
+	@import 'modules/_MODULE.scss'
 
 ## myapp/app/index.php (.php version)
 
