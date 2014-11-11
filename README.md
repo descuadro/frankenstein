@@ -5,13 +5,9 @@ This is a first scratch of a *module protocol* for Frankenstein.
 
 # Requirements
 
-## Gulp
+## Gulp, grunt, bower, yeoman, jekyll !?
 
-## Bower elements
-
-## Yeoman
-
-## Jekyll (optional)
+Details go here.
 
 # Element dynamics
 
