@@ -23,9 +23,11 @@ Add the following:
 
 *module_install.sh* does it.
 
-## myapp/app/includes/_MODULE.*
+## myapp/app/includes/_MODULE_include.php
 
 Here goes the .php, .html, .py or whatever needed to execute the module.
+
+Let's use .php as a standard for now.
 
 ## myapp/app/index.php (.php version)
 
@@ -39,7 +41,7 @@ Add the following:
 
 Add the following:
 
-	{% include _MODULE.* %}
+	{% include _MODULE.php %}
 
 *module_install.sh* SHOULD do it.
 
@@ -53,7 +55,7 @@ Move it to myapp/scss/modules/_MODULE_css.scss
 
 *module_install.sh* does it.
 
-### ./_MODULE.*
+### ./_MODULE_include.php
 
 Move it to myapp/app/includes/_MODULE.*
 
@@ -65,10 +67,10 @@ Move it to myapp/app/includes/_MODULE.*
 	module="name_of_the_module"
 	app_path="path_to_app"
 	priotity="set priority to decide what comes first and last"
-	cp $module_css.scss $app_path/scss/modules/ && ( echo Success moving .scss ; ) || ( echo Failed moving .scss; )
-	cp $module.* $app_path/app/includes/ && ( echo Success moving include file ; ) || ( echo Failed moving include file; )
+	cp $_MODULE_css.scss $app_path/scss/modules/$module && ( echo Success moving .scss ; ) || ( echo Failed moving .scss; )
+	cp $_MODULE_include.php $app_path/app/includes/$module.php && ( echo Success moving include file ; ) || ( echo Failed moving include file; )
 	echo "@import 'modules/$module_css.scss'" >> $app_path/scss/style.scss && ( echo Success writing style.scss ; ) || ( echo Failed writing .scss; )
 	##needs test
-	#sed -i '$priotityi\include 'app/includes/_MODULE.*';' index.php && ( echo Success writing index file ; ) || ( echo Failed writing index file; )
+	#sed -i '$priotityi\include 'app/includes/$module.php';' index.php && ( echo Success writing index file ; ) || ( echo Failed writing index file; )
 
 
