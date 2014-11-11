@@ -114,7 +114,7 @@ Move it to myapp/app/includes/modules/_MODULE.php
 
 ### head.php
 
-<link href="css/style.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 
 ### body.php
 
