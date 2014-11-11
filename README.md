@@ -3,6 +3,16 @@ frankenstein
 
 This is a first scratch of a *module protocol* for Frankenstein.
 
+# Requirements
+
+## Gulp
+
+## Bower elements
+
+## Yeoman
+
+## Jekyll (optional)
+
 # Element dynamics
 
 ## myapp/scss/modules/_MODULE.scss
