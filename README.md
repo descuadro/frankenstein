@@ -45,9 +45,9 @@ Add the following:
 
 ## frankenstein/modules/_MODULE
 
-### ./_MODULE.scss
+### ./_MODULE_css.scss
 
-Move it to myapp/scss/modules/_MODULE.scss
+Move it to myapp/scss/modules/_MODULE_css.scss
 
 ### ./_MODULE.*
 
