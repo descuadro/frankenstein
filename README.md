@@ -21,7 +21,7 @@ The specific css of each module should be put here.
 
 The specific js of each module should be put here.
 
-## myapp/app/includes/_MODULE.php
+## myapp/app/includes/modules/_MODULE.php
 
 Here goes the .php, .html, .py or whatever needed to execute the module.
 
@@ -35,7 +35,7 @@ Add the following:
 
 	@import 'modules/_MODULE.scss'
 
-## myapp/app/body.php (.php version)
+## myapp/app/includes/body.php (.php version)
 
 Add the following:
 
@@ -53,7 +53,7 @@ Add the following:
 
 *module_install.sh* SHOULD do it.
 
-## myapp/app/footer.php (.php version)
+## myapp/app/includes/footer.php (.php version)
 
 Add the following:
 
@@ -79,7 +79,7 @@ Move it to myapp/app/scripts/_MODULE.js
 
 ### ./_MODULE.php
 
-Move it to myapp/app/includes/_MODULE.php
+Move it to myapp/app/includes/modules/_MODULE.php
 
 *module_install.sh* does it.
 
@@ -91,7 +91,7 @@ Move it to myapp/app/includes/_MODULE.php
 	priotity="set priority to decide what comes first and last"
 	cp $_MODULE.scss $app_path/scss/modules/$module.scss && ( echo Success moving .scss ; ) || ( echo Failed moving .scss; )
 	cp $_MODULE.js $app_path/scripts/$module.js && ( echo Success moving .js ; ) || ( echo Failed moving .js; )
-	cp $_MODULE.php $app_path/app/includes/$module.php && ( echo Success moving include file ; ) || ( echo Failed moving include file; )
+	cp $_MODULE.php $app_path/app/includes/modules/$module.php && ( echo Success moving include file ; ) || ( echo Failed moving include file; )
 	echo "@import 'modules/$module.scss'" >> $app_path/scss/style.scss && ( echo Success writing style.scss ; ) || ( echo Failed writing .scss; )
 	echo "<script src="scripts/$module.js type="text/javascript"></script>" >> $app_path/app/includes/footer.php && ( echo Success writing footer ; ) || ( echo Failed footer .scss; )
 	##needs test
@@ -115,6 +115,3 @@ Originally empty. To be filled with modules in the order of their priorities.
 ### footer.php
 
 Originally empty. To be filled with modules's .js .
-
-
-
