@@ -1,7 +1,7 @@
 frankenstein
 ============
 
-This is a first scratch of a *module protocol* for Frankenstein.
+This is a *very first* scratch of a *module protocol* for Frankenstein.
 
 # Requirements
 
