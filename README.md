@@ -61,7 +61,7 @@ Add the following:
 
 *module_install.sh* SHOULD do it.
 
-# Element structure
+# Standard element structure
 
 ## frankenstein/modules/_MODULE
 
@@ -105,7 +105,7 @@ Move it to myapp/app/includes/modules/_MODULE.php
 	##needs test
 	#sed -i '$priotityi\include 'app/includes/$module.php';' body.php && ( echo Success writing index file ; ) || ( echo Failed writing index file; )
 
-# Standard structure
+# Standard app structure
 
 ## index.php
 	include 'app/includes/head.php';
